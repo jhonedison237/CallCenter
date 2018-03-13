@@ -20,7 +20,7 @@ public class Dispatcher {
 	private LinkedBlockingQueue<Call> queueDirector;
 	
 	/** The queue of calls to be attended when an employee is available */
-	ConcurrentLinkedQueue<Call> queueGeneral;
+	private ConcurrentLinkedQueue<Call> queueGeneral;
 
 	/**
 	 * Method constructor to assign the total of employees for every role available to attend the incoming calls

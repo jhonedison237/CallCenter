@@ -9,7 +9,7 @@ package com.almundo.callcenter;
 public class Call {
 
 	/** The id of the call */
-	int idCall;
+	private int idCall;
 	
 	/**
 	 * The constructor class to give id call

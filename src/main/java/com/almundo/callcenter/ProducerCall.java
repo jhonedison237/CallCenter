@@ -9,10 +9,10 @@ package com.almundo.callcenter;
 public class ProducerCall implements Runnable {
 
 	/** Class to dispatch the incoming calls */
-	Dispatcher dispatcher;
+	private Dispatcher dispatcher;
 	
 	/** The received call */
-	Call call;
+	private Call call;
 
 	/**
 	 * Constructor method to assign the dispatcher and employeeRole objects
@@ -20,7 +20,7 @@ public class ProducerCall implements Runnable {
 	 * @param dispatcher to dispatch the call
 	 * @param call the received call
 	 */
-	ProducerCall(Dispatcher dispatcher, Call call) {
+	public ProducerCall(Dispatcher dispatcher, Call call) {
 		this.dispatcher = dispatcher;
 		this.call = call;
 	}

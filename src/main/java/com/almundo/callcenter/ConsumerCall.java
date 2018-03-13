@@ -11,10 +11,10 @@ import java.util.concurrent.TimeUnit;
 public class ConsumerCall implements Runnable {
 	
 	/** Class to attend the incoming calls */
-	Dispatcher dispatcher;
+	private Dispatcher dispatcher;
 	
 	/** The employee role that attends the call */
-	EmployeeRole employeeRole;
+	private EmployeeRole employeeRole;
 
 	/**
 	 * Constructor method to assign the dispatcher and employeeRole objects
@@ -22,7 +22,7 @@ public class ConsumerCall implements Runnable {
 	 * @param dispatcher to attend the call
 	 * @param employeeRole the role who is going to take the call
 	 */
-	ConsumerCall(Dispatcher dispatcher, EmployeeRole employeeRole) {
+	public ConsumerCall(Dispatcher dispatcher, EmployeeRole employeeRole) {
 		this.dispatcher = dispatcher;
 		this.employeeRole = employeeRole;
 	}
